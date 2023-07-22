@@ -4,9 +4,7 @@ export default function EventList(props) {
   return (
     <div className="grid gap-4 md:grid-cols-5">
       {events.map((e) => (
-        <div>
-          <Event event={e} />
-        </div>
+          <Event key={e.id} event={e} />
       ))}
     </div>
   );
